@@ -1,6 +1,6 @@
 #!/bin/sh
 HEREDIR=$(CDPATH="" cd -- "$(dirname -- "$0")" && pwd)
 (
-. .venv/bin/activate
+. $HEREDIR/.venv/bin/activate
 python3 $HEREDIR/src/macro_pack.py $@
 )
